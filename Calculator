@@ -1,0 +1,32 @@
+while True:
+    #--------Input------------#
+    try:
+        num1 = int(input("Number 1:"))
+        ope = input()   
+        num2 = int(input("Number 1:"))
+    except ValueError:
+        print("Please enter a valid number!")
+        continue
+
+     
+    ope = ope.strip()
+    #----------Calculation------#
+    if ope.lower() == "exit":
+        break
+    elif ope == "+":
+        print(num1 + num2)
+    elif ope == "-":
+        print(num1 - num2)
+    elif ope == "*":
+        print(num1 * num2)
+    elif ope == "/":
+        if num2 == 0:
+            print("Num2 must not be 0")
+            continue
+        else:
+            print(num1 / num2)
+    elif ope == "**":
+        print(num1**num2)
+    else:
+        print("Next Equation")
+        continue  
