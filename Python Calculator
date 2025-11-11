@@ -2,7 +2,7 @@ while True:
     #--------Input------------#
     try:
         num1 = int(input("Number 1:"))
-        ope = input()   
+        ope = input("Operator:")   
         num2 = int(input("Number 1:"))
     except ValueError:
         print("Please enter a valid number!")
